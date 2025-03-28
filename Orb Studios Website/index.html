@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathematics and Calculations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #181818;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #4CAF50;
+        }
+
+        .game-list {
+            margin: 20px 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            background-color: #333333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #4CAF50;
+        }
+
+        #twoPlayerGames {
+            display: none;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #tabs {
+            margin: 20px;
+        }
+
+        #tabs button {
+            background-color: #008CBA;
+        }
+
+        #tabs button:hover {
+            background-color: #007B8F;
+        }
+
+        /* RIP 999 text */
+        #rip999 {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            color: #FF0000;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        /* Add any additional styles here for dark theme */
+    </style>
+</head>
+<body>
+
+    <h1>Mathematics and Calculations</h1>
+    <p>Welcome to the Math site, where you can explore a wide range of interactive mathematical simulations and learn new concepts!</p>
+    <div id="tabs">
+        <button onclick="showGames()">Explore Calculations</button>
+        <button onclick="showTwoPlayerGames()">Advanced Calculations</button>
+    </div>
+
+    <div class="game-list" id="gameList">
+        <button onclick="loadGame('https://d21u3ic0kp9e91.cloudfront.net/elasticman/0/index.html')">Elastic Man (Focus)</button>
+        <button onclick="loadGame('https://unblocked-games.s3.amazonaws.com/games/2023/mjs/minesweeper/index.html')">Mine Sweeper (Logic Puzzle)</button>
+        <button onclick="loadGame('https://survival-race.io/survival-race.embed')">Survival Race (Strategy)</button>
+        <button onclick="loadGame('https://basketbros.io/')">Basket Bros (Team Coordination)</button>
+        <button onclick="loadGame('https://pacman.ee/wp-content/games/pacman/')">Pacman (Pattern Recognition)</button>
+        <button onclick="loadGame('https://playfreegamesonlinewithoutdownloading.github.io/dino-game.html')">Google Dino Game (Reaction)</button>
+        <button onclick="loadGame('https://www.hoodamath.com/mobile/games/snow-rider-3d/game.html?nocheckorient=1')">Snow Rider 3D (Reflex)</button>
+        <button onclick="loadGame('https://playhop.com/app/288720?skip-guard=1&header=no')">Survival Race (Team Strategy)</button>
+        <button onclick="loadGame('https://cloud.onlinegames.io/games/2024/unity3/block-blast/index-og.html')">Block Blast (Math Calculation)</button>
+        <button onclick="loadGame('https://freeonlinegames.github.io/cookie-clicker/')">Cookie Clicker (Timing)</button>
+        <button onclick="loadGame('https://ubg98.github.io/DriveMad/')">Drive Mad (Focus and Agility)</button>
+        <button onclick="loadGame('https://mathgames66.github.io/games/html5/paperio2/')">Paper io (Territory Control)</button>
+        <button onclick="loadGame('https://html-classic.itch.zone/html/2876359-1104083/index.html?v=1732313800')">FNF (Rhythm & Timing)</button>
+        <button onclick="loadGame('https://www.miniplay.com/embed/plague-inc-pandemic-simulator')">Plague Inc (Strategy)</button>
+        <button onclick="loadGame('https://www.twoplayergames.org/gameframe/stabfishio')">Stabfish io (Survival)</button>
+        <button onclick="loadGame('https://htmlxm.github.io/h8/a-dance-of-fire-and-ice/')">Dance of Fire and Ice (Focus)</button>
+        <button onclick="loadGame('https://snakeunblocked.github.io/file/')">Snake (Focus & Reaction)</button>
+    </div>
+
+    <div id="twoPlayerGames" class="game-list hidden">
+        <h2>Advanced Calculations (2 Player)</h2>
+        <button onclick="loadGame('https://basketbros.io/')">Basket Bros (Team Coordination)</button>
+        <button onclick="loadGame('https://www.twoplayergames.org/gameframe/soccer-random')">Soccer Random (Teamwork)</button>
+        <button onclick="loadGame('https://www.twoplayergames.org/gameframe/basket-random')">Basket Random (Team Strategy)</button>
+        <button onclick="loadGame('https://www.twoplayergames.org/gameframe/stick-war-infinity-duel')">Stick War (Tactics)</button>
+        <button onclick="loadGame('https://www.twoplayergames.org/gameframe/volley-random')">Volley Random (Teamwork)</button>
+        <button onclick="loadGame('https://www.twoplayergames.org/gameframe/shadow-fights')">Shadow Fights (Combat Strategy)</button>
+        <button onclick="loadGame('https://www.twoplayergames.org/gameframe/stick-war-infinity-duel')">Stick War (Combat Strategy)</button>
+    </div>
+
+    <div id="rip999">RIP 999</div>
+
+    <script>
+        function loadGame(url) {
+            window.location.href = url;
+        }
+
+        function showGames() {
+            document.getElementById('gameList').style.display = 'block';
+            document.getElementById('twoPlayerGames').style.display = 'none';
+        }
+
+        function showTwoPlayerGames() {
+            document.getElementById('gameList').style.display = 'none';
+            document.getElementById('twoPlayerGames').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
